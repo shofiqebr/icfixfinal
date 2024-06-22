@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-btn-style:hover {
+	color: #f96331;
+	background: transparent;
+}
+.navbar-btn-style:hover + .hover-effect {
+	display: block;
+	background-color: #f96331;
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.banner-bg {
+	  background-position: center top; /* Adjust as needed */
+	  background-size: 900px;
+	}
+  }
+
+  @media (min-width: 1100px) {
+	.hidden-lg-block-tab1 {
+	  display: block !important; /* Show the element on screens larger than or equal to 1100px */
+	}
+  }
+  @media (min-width: 1099px) {
+	.hidden-1100-tab1 {
+	  display: none !important; /* Show the element on screens larger than or equal to 1100px */
+	}
+  }
