@@ -18,7 +18,7 @@ const AllCategory = () => {
             <div>
               <TfiMenuAlt />
             </div>
-            <div>সকল ক্যাটাগরি</div>
+            <div>All Category</div>
           </div>
 
           <hr className="pt-5" />
@@ -31,22 +31,7 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
-                </div>
-                <span>
-                  <FaChevronDown className="text-blue-500 text-sm" />
-                </span>
-              </div>
-              <hr />
-              ooo
-            </div>
-            <div>
-              <div className="flex justify-between items-center">
-                <div className="flex justify-center items-center gap-3">
-                  <span>
-                    <img className="w-7" src={category1} alt="" />
-                  </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />
@@ -60,7 +45,7 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />
@@ -74,7 +59,7 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />
@@ -88,7 +73,7 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />
@@ -102,7 +87,7 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />
@@ -116,7 +101,7 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />
@@ -130,7 +115,21 @@ const AllCategory = () => {
                   <span>
                     <img className="w-7" src={category1} alt="" />
                   </span>
-                  <span className="text-sm hover:text-[#F15B2D]">ছেলেদের ফ্যাশন</span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
+                </div>
+                <span>
+                  <FaChevronDown className="text-blue-500 text-sm" />
+                </span>
+              </div>
+              <hr />
+            </div>
+            <div>
+              <div className="flex justify-between items-center">
+                <div className="flex justify-center items-center gap-3">
+                  <span>
+                    <img className="w-7" src={category1} alt="" />
+                  </span>
+                  <span className="text-sm hover:text-[#F15B2D]">Boys Fashion</span>
                 </div>
                 <span>
                   <FaChevronDown className="text-blue-500 text-sm" />

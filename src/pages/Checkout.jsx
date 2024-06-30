@@ -11,7 +11,6 @@ const Checkout = () => {
   const [isChecked, setIsChecked] = useState(false);
   const {register, handleSubmit} = useForm();
   const totalPrice = proceedCart.reduce((acc, item) => acc + item.amount, 0);
-  console.log(userData);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -30,15 +29,21 @@ const Checkout = () => {
       item.delivery_date = formatDate();
     });
 
+
+    
     let customerOrder = {
       transaction_date: formatDate(),
       items: proceedCart,
     };
-
+   
     getUser(data.email)
       .then((isUserValid) => {
         if (isUserValid) {
           customerOrder.customer = isUserValid;
+
+
+
+          
           postData("Sales Order", customerOrder)
             .then((isUser) => {
               if (isUser) {

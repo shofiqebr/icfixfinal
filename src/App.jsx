@@ -30,6 +30,7 @@ const App = () => {
           setUserData(result);
           setUser(result[0]?.customer_name);
         } else {
+          
           setUser(null);
           setCartItems(0);
           setUserData([]);

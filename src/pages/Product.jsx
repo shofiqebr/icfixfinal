@@ -1,5 +1,5 @@
 import {useContext, useEffect, useState} from "react";
-import {Link, useParams} from "react-router-dom";
+import {Link, useLocation, useParams} from "react-router-dom";
 import {CartContext, ItemContext, UserContext, WebContext} from "../App";
 import {BsCashCoin} from "react-icons/bs";
 import {CiHeart, CiShare2} from "react-icons/ci";
@@ -262,106 +262,7 @@ const Product = () => {
           {/* <h1 className="mt-3 max-w-screen-xl mx-auto  font-bold">Ratings & Reviews</h1> */}
           <div className="max-w-screen-xl mx-auto mt-5 ">
             {/* <div className="flex flex-col md:flex-row  gap-4 "> */}
-            {
-              // <div className="md:w-[80%] bg-white p-4">
-              //   <div className="flex flex-col md:flex-row lg:gap-12 md:gap-4">
-              //     <div>
-              //       <div>
-              //         <div className="flex items-center gap-7">
-              //           <h1 className="text-3xl font-semibold">4.1 </h1>
-              //           <div className="bg-[#ffc700] w-28 p-1 flex gap-3 items-center">
-              //             <img className="w-3 h-3" src="https://i.ibb.co/vjXrq43/O1-CN01-Av-JLRr1gxlv-S02-Jss-6000000004209-2-tps-24-24.png" alt="" />
-              //             <p className="text-white">Very Good</p>
-              //           </div>
-              //         </div>
-              //       </div>
-              //       <div className="mt-6">
-              //         <div className="flex items-center gap-2 text-[12px]">
-              //           <div className="flex text-[#faca51]">
-              //             <TiStarFullOutline className="text-[20px]" />
-              //             <TiStarFullOutline className="text-[20px]" />
-              //             <TiStarFullOutline className="text-[20px]" />
-              //             <TiStarFullOutline className="text-[20px]" />
-              //             <FaStarHalf className="text-[20px]" />
-              //           </div>
-              //           <p className="font-bold">155 ratings</p>
-              //           {/* ({rating}) */}
-              //         </div>
-              //       </div>
-              //     </div>
-              //     <div className="h-24 w-[1px] bg-gray-400 hidden md:block"></div>
-              //     <div className="flex flex-col md:flex-row  gap-3">
-              //       <div className="flex flex-col gap-3 -mt-1">
-              //         <div className="flex text-[#faca51]">
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //         </div>
-              //         <div className="flex text-[#faca51]">
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px] text-[#eff0f5]" />
-              //         </div>
-              //         <div className="flex text-[#faca51]">
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px] text-[#eff0f5]" />
-              //           <TiStarFullOutline className="text-[20px] text-[#eff0f5]" />
-              //         </div>
-              //         <div className="flex text-[#faca51]">
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px] text-[#eff0f5]" />
-              //           <TiStarFullOutline className="text-[20px] text-[#eff0f5]" />
-              //           <TiStarFullOutline className="text-[20px] text-[#eff0f5]" />
-              //         </div>
-              //         <div className="flex text-[#eff0f5]">
-              //           <TiStarFullOutline className="text-[20px] text-[#faca51]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px]" />
-              //           <TiStarFullOutline className="text-[20px] " />
-              //         </div>
-              //       </div>
-              //       <div className="flex flex-col p-3 gap-6">
-              //         <progress className="progress progress-warning md:w-52" value={0} max="100"></progress>
-              //         <progress className="progress progress-warning md:w-52" value="10" max="100"></progress>
-              //         <progress className="progress progress-warning md:w-52" value="40" max="100"></progress>
-              //         <progress className="progress progress-warning md:w-52" value="70" max="100"></progress>
-              //         <progress className="progress progress-warning md:w-52" value="100" max="100"></progress>
-              //       </div>
-              //     </div>
-              //   </div>
-              //   <hr className="mt-12" />
-              //   {/* Comments Parts  */}
-              //   <div className="mt-3">
-              //     <p className="text-sm">What people like about it</p>
-              //     <hr className="mt-3" />
-              //     <div className="flex items-center justify-between mt-3">
-              //       <div className="flex items-center">
-              //         <div className="flex items-center">
-              //           <FaStar className="text-[#ffc700] text-[12px] "></FaStar>
-              //           <FaStar className="text-[#ffc700] text-[12px]"></FaStar>
-              //           <FaStar className="text-[#ffc700] text-[12px]"></FaStar>
-              //           <FaStar className="text-[#ffc700] text-[12px]"></FaStar>
-              //           <FaStarHalf className="text-[#ffc700] text-[12px]"></FaStarHalf>
-              //         </div>
-              //         <p className="text-[12px]">FaStarHalf</p>
-              //       </div>
-              //       <div>
-              //         <p>4 weeks ago</p>
-              //       </div>
-              //     </div>
-              //     <p className="mt-2 text-[12px]">যেমন দেখেছি হুবহু সেইম জিনিস পেয়েছি.... কাপড়টা প্রিমিয়াম একটা ফিল দেই.... আমার কাছে খুবই ভালো লেগেছে.... ধন্যবাদ সেলার ভাই কে....</p>
-              //     <div></div>
-              //   </div>
-              // </div>
-            }
+         
             <div>
               {/* make uper div undo if not needed */}
               <h1 className="text-[12px] font-bold">People Who Viewed This Item Also Viewed</h1>

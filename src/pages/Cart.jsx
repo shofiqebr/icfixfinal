@@ -9,6 +9,7 @@ const calculateTotalPrice = (cartData, quantities) => {
   return cartData.reduce((total, item, idx) => total + item.standard_rate * quantities[idx], 0);
 };
 
+
 const Cart = () => {
   const navigate = useNavigate();
   const {user} = useContext(UserContext);
@@ -17,7 +18,7 @@ const Cart = () => {
   const [quantities, setQuantities] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [loader, setLoader] = useState(true);
-
+  
   useEffect(() => {
     let cart = getStrdCart("cart");
     setQuantities(cart.map((item) => item.qty));
@@ -45,7 +46,9 @@ const Cart = () => {
       }
     });
     setLoader(true);
+  
   };
+  // console.log(cartItmData);
 
   const handleProceed = () => {
     const dataToSubmit = cartItmData.map((data, idx) => ({
@@ -53,6 +56,7 @@ const Cart = () => {
       item_name: data.item_name,
       item_code: data.item_code,
       standard_rate: data.standard_rate,
+      
       qty: quantities[idx],
       uom: data.uom,
       price: quantities[idx] * data.standard_rate,
@@ -66,7 +70,7 @@ const Cart = () => {
       uom: data.uom,
       amount: quantities[idx] * data.standard_rate,
     }));
-
+    navigate("/checkout");
     if (addToProceed(dataToSubmit, "cart")) {
       if (addToProceed(dataToProceed, "proceed")) {
         let cart = getStrdCart("cart");

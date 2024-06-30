@@ -12,7 +12,7 @@ const Category = () => {
   const [tabIndex, setTabIndex] = useState();
   const [checkedIndexes, setCheckedIndexes] = useState([]);
 
-  // console.log(webItmData);
+  
 
   useEffect(() => {
     let index = id ? parseInt(id) : 0;
@@ -24,6 +24,7 @@ const Category = () => {
     let filteredItems = webItmData.filter((item) => item.item_group === grp);
     return filteredItems.length;
   };
+  
 
   let handleActive = (index) => {
     setCheckedIndexes((prevState) => (prevState.includes(index) ? prevState.filter((i) => i !== index) : [index]));
@@ -75,10 +76,8 @@ const Category = () => {
                   </h2>
                   <div>
                     <select className="select select-bordered select-xs w-52">
-                      <option value="sort">নতুন</option>
-                      <option value="popular">জনপ্রিয়</option>
-                      {/* <option value="lowToHigh">দাম : সবচেয়ে কম থেকে বেশী</option> */}
-                      {/* <option value="highToLow">দাম : সবচেয়ে বেশী থেকে কম</option> */}
+                      <option value="sort">New</option>
+                      <option value="popular">Popular</option>                  
                     </select>
                   </div>
                 </div>

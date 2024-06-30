@@ -18,6 +18,8 @@ const addToCart = (newItem) => {
     localStorage.setItem(`${window.location.hostname}-cart`, JSON.stringify(currentCart));
     return false;
   } else {
+
+
     currentCart.push(newItem);
     localStorage.setItem(`${window.location.hostname}-cart`, JSON.stringify(currentCart));
     return true;
@@ -25,6 +27,7 @@ const addToCart = (newItem) => {
 };
 
 const putCartDB = async (user, item) => {
+  
   const addItem = {
     custom_cart: JSON.stringify(item),
   };
@@ -58,7 +61,10 @@ const getUserCartData = async (user) => {
       api_key: "fb6a7b744acef86",
     },
   });
+
   const cart = await cartData.json();
+  // console.log(cartData);
+  // console.log(cart);
   return cart[0]?.custom_cart ? JSON.parse(cart[0]?.custom_cart) : [];
 };
 
@@ -68,9 +74,11 @@ const addToProceed = (newItem, store) => {
   return true;
 };
 
+
 const getStrdCart = (store) => {
   let strCart = [];
   const storedCart = localStorage.getItem(`${window.location.hostname}-${store}`);
+
   if (storedCart) {
     strCart = JSON.parse(storedCart);
   }

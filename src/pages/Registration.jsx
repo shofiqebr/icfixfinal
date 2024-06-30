@@ -11,6 +11,7 @@ const Registration = () => {
   const {register, handleSubmit} = useForm();
 
   const onSubmit = (data) => {
+    // console.log(data);
     if (data.custom_password === data.password) {
       let newCustomer = {
         customer_name: data.customer_name,

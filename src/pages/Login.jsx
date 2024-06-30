@@ -10,6 +10,7 @@ import {useContext, useEffect} from "react";
 const Login = () => {
   const navigate = useNavigate();
   const {user, setUser} = useContext(UserContext);
+  
   const {setCartItems} = useContext(CartContext);
   const {register, handleSubmit} = useForm();
 

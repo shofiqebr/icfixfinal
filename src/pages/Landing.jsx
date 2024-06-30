@@ -49,10 +49,10 @@ const Item = () => {
             </h2>
             <div className="mt-8 text-center"></div>
 
-            <div className="text-center mt-6 border-4 rounded-full md:w-96 mx-auto border-customOrange hover:border-gray-800 p-2 hover:scale-110 duration-300	flex justify-center items-center">
+            <div className="text-center mt-6 border-4 rounded-full md:w-[340px] w-[240px] mx-auto border-customOrange hover:border-gray-800 p-2 hover:scale-110 duration-300	flex justify-center items-center">
               <button className="font-extrabold py-4 md:px-[85px] px-[40px] bg-customOrange rounded-full flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
                 <FaShoppingCart />
-                অর্ডার করতে চাই
+                Order Now
               </button>
             </div>
             <h1 className="text-customOrange font-extrabold text-2xl text-center mt-8 ">{formatStyle("custom_heading_4")}</h1>
@@ -102,12 +102,7 @@ const Item = () => {
               {formatStyle("custom_heading_7")}
             </h1>
             <h2 className="mt-5 text-customOrange text-2xl font-extrabold">{formatStyle("custom_heading_10")}</h2>
-            {/* <div className="text-center mt-8 border-4 rounded-full md:w-96 mx-auto border-[#d3ac2b] hover:border-gray-800 p-2 hover:scale-110 duration-300	">
-          <button className="font-extrabold py-4 md:px-[85px] px-[40px] bg-[#d3ac2b] rounded-full flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
-            <FaShoppingCart />
-            অর্ডার করতে চাই
-          </button>
-        </div> */}
+        
           </div>
           {/* card Section */}
 
@@ -138,10 +133,10 @@ const Item = () => {
                   <p>{formatStyle("custom_heading_15")}</p>
                 </div>
               </div>
-              <div className="text-center mt-8 border-4 rounded-full md:w-96 mx-auto border-customOrange hover:border-gray-800 p-2 hover:scale-110 duration-300 flex justify-center items-center	">
+              <div className="text-center mt-8 border-4 rounded-full md:w-[340px] w-[230px] mx-auto border-customOrange hover:border-gray-800 p-2 hover:scale-110 duration-300 flex justify-center items-center	">
                 <button className="font-extrabold  md:px-[85px] px-[32px] bg-customOrange rounded-full py-3 flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
                   <FaShoppingCart />
-                  অর্ডার করতে চাই
+                  Order Now
                 </button>
               </div>
             </div>
@@ -150,10 +145,10 @@ const Item = () => {
           <section className="bg-[#F4F3EA] text-center mt-8 p-8">
             <div className="md:max-w-screen-xl md:mx-auto">
               <h1 className="text-3xl font-extrabold text-customOrange">{formatStyle("custom_heading_16")}</h1>
-              <div className="text-center mt-8 border-4 rounded-full md:w-96 mx-auto border-customOrange hover:border-gray-800 p-2 hover:scale-110 duration-300 flex justify-center items-center	">
+              <div className="text-center mt-8 border-4 rounded-full md:w-[340px] w-[210px] mx-auto border-customOrange hover:border-gray-800 p-2 hover:scale-110 duration-300 flex justify-center items-center	">
                 <button className="font-extrabold  md:px-[85px] px-[22px] bg-customOrange rounded-full py-3 flex items-center justify-center gap-1 text-xl text-white hover:bg-gray-800">
                   <FaShoppingCart />
-                  অর্ডার করতে চাই
+                  Order Now
                 </button>
               </div>
             </div>

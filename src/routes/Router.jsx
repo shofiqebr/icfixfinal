@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
 
       {
         path: "/item/:name",
-        element: <Product />,
+        element: <Product />, 
       },
       {
         path: "/cart",
